@@ -1,38 +1,163 @@
-.App {
+.header-color {
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.landing-grid {
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.projects-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.picture-style {
+  height: 270px;
+  position: fixed;
+  left: 42%;
+  top: 8%;
+}
+
+.banner-txt {
+  background-color: lightgrey;
+  opacity: 0.8;
+  width: 65%;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 15%;
+  left: 18%;
+}
+
+.banner-txt h1 {
+  font-size: 66px;
+  font-weight: bold;
+  color: black;
+}
+
+.banner-txt hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+  padding: 0em;
+}
+
+.banner-txt p {
+  color: black;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.socials i {
+  color: black;
+  font-size: 5em;
+  padding: 8px;
+}
+
+.cards {
+  box-shadow: 0;
+  width: 60%;
+  margin: auto;
+}
+
+.card1 {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card2 {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card2:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card3 {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card3:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.contact-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 558px;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-grid h2 {
+  font-family: "Anton", sans-serif;
+}
+
+.contact-grid p {
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 60px;
+  padding-right: 5rem;
+  color: black;
 }
