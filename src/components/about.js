@@ -3,6 +3,8 @@ import { Grid, Cell, Button } from "react-mdl";
 import Main from "./main";
 import { Link } from "react-router-dom";
 
+import pics from "./collage.png";
+
 class AboutMe extends Component {
   render() {
     return (
@@ -21,10 +23,10 @@ class AboutMe extends Component {
           </h1>
           <h2
             style={{
-              fontSize: "25px",
+              fontSize: "22px",
               fontWeight: "bold",
               position: "relative",
-              top: "-2.5%",
+              top: "-0.5%",
               left: "5%"
             }}
           >
@@ -37,10 +39,18 @@ class AboutMe extends Component {
           <br />
           <p2
             style={{
-              backgroundColor: "#3B7A57",
+              borderRadius: "1px",
+              borderWidth: 2,
+              paddingLeft: 8,
+              paddingRight: 8,
+              paddingTop: 3,
+              paddingBottom: 3,
+              textAlign: "center",
+              margin: 10,
+              backgroundColor: "#91e3b3",
               fontSize: "20px",
               position: "relative",
-              left: "7%"
+              left: "6%"
             }}
           >
             Hometown
@@ -49,7 +59,7 @@ class AboutMe extends Component {
             style={{
               fontSize: "20px",
               position: "relative",
-              left: "9%"
+              left: "8%"
             }}
           >
             Brampton, Ontario 🍁
@@ -58,47 +68,72 @@ class AboutMe extends Component {
           <br />
           <p4
             style={{
-              backgroundColor: "#7CB9E8",
+              borderRadius: "1px",
+              borderWidth: 2,
+              paddingLeft: 8,
+              paddingRight: 8,
+              paddingTop: 3,
+              paddingBottom: 3,
+              textAlign: "center",
+              margin: 10,
+              backgroundColor: "#a4eef5",
               fontSize: "20px",
               position: "relative",
-              left: "7%"
+              left: "6%"
             }}
           >
             Education
           </p4>
-          <p5 style={{ fontSize: "20px", position: "relative", left: "9%" }}>
+          <p5 style={{ fontSize: "20px", position: "relative", left: "8%" }}>
             1B Computer Science, University of Waterloo
           </p5>
           <br />
           <br />
           <p6
             style={{
-              backgroundColor: "#F19CBB",
+              borderRadius: "1px",
+              borderWidth: 2,
+              paddingLeft: 8,
+              paddingRight: 8,
+              paddingTop: 3,
+              paddingBottom: 3,
+              textAlign: "center",
+              margin: 10,
+              backgroundColor: "#e3919c",
               fontSize: "20px",
               position: "relative",
-              left: "7%"
+              left: "6%"
             }}
           >
             Skills
           </p6>
-          <p7 style={{ fontSize: "20px", position: "relative", left: "9%" }}>
-            Java, React, HTML/CSS, PHP, mySql, Arduino, Phython, C
+          <p7 style={{ fontSize: "20px", position: "relative", left: "8%" }}>
+            Java, React, HTML/CSS, PHP, mySQL, Arduino, Python, C
           </p7>
           <br />
           <br />
           <p8
             style={{
-              backgroundColor: "#FFBF00",
+              borderRadius: "1px",
+              borderWidth: 2,
+              paddingLeft: 8,
+              paddingRight: 8,
+              paddingTop: 3,
+              paddingBottom: 3,
+              textAlign: "center",
+              margin: 10,
+              backgroundColor: "#d2b2f7",
               fontSize: "20px",
               position: "relative",
-              left: "7%"
+              left: "6%"
             }}
           >
             Intrests
           </p8>
-          <p9 style={{ fontSize: "20px", position: "relative", left: "9%" }}>
+          <p9 style={{ fontSize: "20px", position: "relative", left: "8%" }}>
             Soccer, Basketball, YouTube
           </p9>
+          <br />
           <br />
           <br />
           <p10 style={{ fontSize: "20px", position: "relative", left: "7%" }}>
@@ -110,12 +145,15 @@ class AboutMe extends Component {
               Summer 2020 internship
             </p11>. <br />
             <br />
-            Just click below to find my resume or if you'd like to talk navigate
-            to the contacts page on the website.
+            Just click below to find my resume or if you'd like to talk click on
+            the Contact Me button.
           </p10>
           <br />
           <br />
-          <a href="https://github.com/tapish1/WebScraper" target="_blank">
+          <a
+            href="https://docs.google.com/document/d/1483leEYVRqTmTPeoXDYg4Sg11j8s8Qm0B3hkbuYW0jA/edit?usp=sharing"
+            target="_blank"
+          >
             <Button
               raised
               colored
@@ -127,16 +165,32 @@ class AboutMe extends Component {
             >
               Resume
             </Button>
-            <Link to="/contact">
-              <Button
-                raised
-                colored
-                style={{ position: "relative", left: "6.5%", fontSize: "18px" }}
-              >
-                Contact Me
-              </Button>
-            </Link>
           </a>
+          <Link to="/contact">
+            <Button
+              raised
+              colored
+              style={{ position: "relative", left: "6.5%", fontSize: "18px" }}
+            >
+              Contact Me
+            </Button>
+          </Link>
+        </Cell>
+
+        <Cell col={6}>
+          <img
+            className="collage"
+            src={pics}
+            alt="second img"
+            style={{
+              width: "400px",
+              height: "440px",
+              position: "relative",
+              overflow: "scroll",
+              left: "140%",
+              bottom: "95%"
+            }}
+          ></img>
         </Cell>
       </Grid>
     );

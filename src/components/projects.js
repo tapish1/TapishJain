@@ -10,8 +10,10 @@ import {
   CardMenu,
   IconButton
 } from "react-mdl";
-import Logo from "./unnamed.png";
+import Logo from "./website-pic.png";
 import pic from "./parki.jpg";
+import Main from "./main";
+import { Link } from "react-router-dom";
 
 class Projects extends Component {
   render() {
@@ -106,17 +108,15 @@ class Projects extends Component {
                 </CardText>
                 <CardActions border>
                   <a
-                    href="https://github.com/tapish1/WebScraper"
+                    href="https://github.com/tapish1/TapishJain"
                     target="_blank"
                   >
                     <Button colored>GitHub</Button>
-
-                    <a
-                      href="https://github.com/tapish1/WebScraper"
-                      target="_blank"
-                    ></a>
-                    <Button colored>Live demo</Button>
                   </a>
+
+                  <Link to="/" target="_blank">
+                    <Button colored>Live demo</Button>
+                  </Link>
                 </CardActions>
                 <CardMenu style={{ color: "#fff" }}>
                   <IconButton name="share" />
@@ -155,7 +155,7 @@ class Projects extends Component {
                 </CardText>
                 <CardActions border>
                   <a
-                    href="https://github.com/tapish1/WebScraper"
+                    href="https://github.com/Mi1ind/HacktheNorth2019"
                     target="_blank"
                   >
                     <Button colored>GitHub</Button>

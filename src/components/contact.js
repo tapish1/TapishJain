@@ -14,7 +14,7 @@ class ContactMe extends Component {
             <img
               src={pic}
               alt="me"
-              style={{ height: "250px", width: "200px" }}
+              style={{ height: "300px", width: "220px" }}
             ></img>
             <p style={{ width: "70%", margin: "auto", paddingTop: "1em" }}>
               Hi! If you'd like to get in touch with me please contact me on any
@@ -23,14 +23,17 @@ class ContactMe extends Component {
               resume.
             </p>
             <br />
-            <a href="https://github.com/tapish1/WebScraper" target="_blank">
+            <a
+              href="https://docs.google.com/document/d/1483leEYVRqTmTPeoXDYg4Sg11j8s8Qm0B3hkbuYW0jA/edit?usp=sharing"
+              target="_blank"
+            >
               <Button
                 raised
                 colored
                 style={{
                   backgroundColor: "grey",
                   position: "relative",
-                  left: "5.5%",
+                  left: "2%",
                   fontSize: "18px"
                 }}
               >
@@ -44,7 +47,7 @@ class ContactMe extends Component {
                 style={{
                   backgroundColor: "grey",
                   position: "relative",
-                  left: "6.5%",
+                  left: "3%",
                   fontSize: "18px"
                 }}
               >
@@ -61,7 +64,9 @@ class ContactMe extends Component {
                   <ListItemContent
                     style={{ fontSize: "25px", fontFamily: "Anton" }}
                   >
-                    <i className="fa fa-phone-square" aria-hidden="true"></i>
+                    <a href="tel:16479247897" target="_blank">
+                      <i className="fa fa-phone-square" aria-hidden="true"></i>
+                    </a>
                     (647) 924-7897
                   </ListItemContent>
                 </ListItem>
@@ -70,7 +75,9 @@ class ContactMe extends Component {
                   <ListItemContent
                     style={{ fontSize: "25px", fontFamily: "Anton" }}
                   >
-                    <i className="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:t9jain@uwaterloo" target="_blank">
+                      <i className="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
                     t9jain@uwaterloo.ca
                   </ListItemContent>
                 </ListItem>
